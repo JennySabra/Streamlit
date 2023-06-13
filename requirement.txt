@@ -1,0 +1,5 @@
+Streamlit==1.23.1
+Pandas==2.0.2
+Python==3.11.3
+plotly==5.9.0
+matplotlib==3.7.1
