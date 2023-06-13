@@ -13,7 +13,7 @@ import plotly.express as px
 st.set_page_config(layout="wide", page_title=None)
 
 # Load the Parkinson's disease dataset
-data = pd.read_csv("C:/Users/student/Downloads/parkinson.csv")
+data = pd.read_csv("parkinson.csv")
 
 # Creating Navigation bar
 menu_data = [{"label":"Demographic"}, {'label':'Medication'}, {'label':'Parkinson Facts'}, {'label':'Parkinson Death'}]
@@ -235,11 +235,11 @@ if menu_id =="Parkinson Facts":
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
     
-    image1_path = r"C:\Users\student\Desktop\download.jpg"
-    image2_path = r"C:\Users\student\Desktop\parkinsons.jpg"
-    image3_path = r"C:\Users\student\Desktop\Substantia-nigra.png"
-    image4_path = r"C:\Users\student\Desktop\download.png"
-    image5_path = r"C:\Users\student\Desktop\poisoning-pill-bottle.jpg"
+    image1_path = r"download.jpg"
+    image2_path = r"parkinsons.jpg"
+    image3_path = r"Substantia-nigra.png"
+    image4_path = r"download.png"
+    image5_path = r"poisoning-pill-bottle.jpg"
     col1, col2, col3 = st.columns(3)
     image_width = 200
     with col1:
@@ -285,7 +285,7 @@ if menu_id =="Parkinson Facts":
 if menu_id =="Parkinson Death":
     st.header("Parkinson's Disease Data Analysis")
     st.subheader("Death Analysis")   
-    df = pd.read_csv("C:/Users/student/Downloads/WHOMortalityDatabase_Deaths_sex_age_a_country_area_year-Parkinson disease_11th June 2023 14_19 (1).csv")
+    df = pd.read_csv("WHOMortalityDatabase_Deaths_sex_age_a_country_area_year-Parkinson disease_11th June 2023 14_19 (1).csv")
     df = df.dropna(subset=['Death rate per 100 000 population'])
     # Create two columns using st.columns()
     col1, col2 = st.columns(2)
