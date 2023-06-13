@@ -6,7 +6,6 @@ import plotly.graph_objects as go
 from matplotlib.gridspec import GridSpec
 import hydralit_components as hc
 from streamlit.components.v1 import html
-from streamlit_lottie import st_lottie
 from PIL import Image, ImageOps
 import plotly.express as px
 
